@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "foodextras",
+	"version": "${version}",
+	"name": "Food Extras",
+	"description": "Adding more food to the game, so that you can fill your stomach",
+	"authors": [
+		"The Brocker rocker",
+		"Teunio2010"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/foodextras/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.teunheeftgeenleven.foodextras.FoodExtras"
+		],
+		"client": [
+			"net.teunheeftgeenleven.foodextras.FoodExtrasClient"
+		],
+		"fabric-datagen": [
+			"net.teunheeftgeenleven.foodextras.FoodExtrasDataGenerator"
+		]
+	},
+	"mixins": [
+		"foodextras.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.2",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
