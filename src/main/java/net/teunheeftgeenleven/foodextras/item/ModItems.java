@@ -13,7 +13,11 @@ import  net.minecraft.registry.Registry;
 public class ModItems {
 
     public static final Item KNIFE = registerItem("knife", new Item(new Item.Settings()));
-
+    public static final Item PIZZA = registerItem( "whole_pizza", new Item(new Item.Settings()));
+    public static final Item COCA = registerItem("coca_powder" , new Item(new Item.Settings()));
+    public static final Item PURE = registerItem("pure_chocalete", new Item(new Item.Settings()));
+    public static final Item MILK = registerItem("milk_chocalate", new Item(new Item.Settings()));
+    public static final Item WHITE = registerItem("white_chocalate", new Item(new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item ) {
@@ -25,6 +29,15 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(KNIFE);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
+            entries.add(COCA);
+            entries.add(PIZZA);
+            entries.add(PURE);
+            entries.add(MILK);
+            entries.add(WHITE);
+
+
         });
 
     }

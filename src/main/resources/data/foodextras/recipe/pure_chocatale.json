@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "mics",
+  "key": {
+    "#": {
+      "item": "foodextras:coca_powder"
+    }
+  },
+  "patern": [
+    "",
+    "###",
+    ""
+  ],
+  "result":{
+    "count": 1,
+    "id":"foodextras:pure_chocalate"
+  }
+}
