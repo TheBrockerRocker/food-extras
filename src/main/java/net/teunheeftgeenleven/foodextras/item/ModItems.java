@@ -14,10 +14,10 @@ public class ModItems {
 
     public static final Item KNIFE = registerItem("knife", new Item(new Item.Settings()));
     public static final Item PIZZA = registerItem( "whole_pizza", new Item(new Item.Settings()));
-    public static final Item COCA = registerItem("coca_powder" , new Item(new Item.Settings()));
-    public static final Item PURE = registerItem("pure_chocalete", new Item(new Item.Settings()));
-    public static final Item MILK = registerItem("milk_chocalate", new Item(new Item.Settings()));
-    public static final Item WHITE = registerItem("white_chocalate", new Item(new Item.Settings()));
+    public static final Item COCA = registerItem("cocoa_powder" , new Item(new Item.Settings()));
+    public static final Item PURE = registerItem("pure_chocolate", new Item(new Item.Settings()));
+    public static final Item MILK = registerItem("milk_chocolate", new Item(new Item.Settings()));
+    public static final Item WHITE = registerItem("white_chocolate", new Item(new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item ) {

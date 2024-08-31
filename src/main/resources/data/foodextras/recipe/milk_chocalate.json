@@ -5,20 +5,16 @@
     "#": {
       "item": "foodextras:coca_powder"
     },
-    "A":{
-      "item": "minecraft:air"
-    },
+
     "B": {
       "item": "minecraft:milk_bucket"
     }
   },
-  "patern": [
-    "AAA",
-    "#B#",
-    "AAA"
+  "pattern": [
+    "#B#"
   ],
   "result":{
     "count": 1,
-    "id":"foodextras:milk_chocalate"
+    "id":"foodextras:milk_chocolate"
   }
 }

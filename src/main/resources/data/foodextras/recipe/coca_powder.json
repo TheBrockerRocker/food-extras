@@ -1,12 +1,15 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "ingredients": [{
-    "item" : "foodextras:cutting_knife"},
-    {"item" : "minecraft:cocoa_beans"
-  }],
-  "restult": {
-    "count": 1,
-    "id": "foodextras:cocapowder"
+  "ingredients": [
+    {
+      "item": "foodextras:knife"
+    },
+    {
+      "item": "minecraft:cocoa_beans"
+    }
+  ],
+  "result": {
+    "id": "foodextras:cocoa_powder",
+    "count": 1
   }
 }

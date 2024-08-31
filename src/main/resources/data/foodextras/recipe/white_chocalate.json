@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [{
-   "item": "foodextras:milk_chocalate"
+   "item": "foodextras:milk_chocolate"
   },
     {
       "item": "minecraft:white_dye"
     }],
   "result": {
     "count": 1,
-    "id": "fooextras:white_chocalate"
+    "id": "foodextras:white_chocolate"
   }
 }
