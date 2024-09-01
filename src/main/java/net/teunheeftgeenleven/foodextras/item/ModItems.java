@@ -70,7 +70,7 @@ public class ModItems {
             entries.add(PMUF);
             entries.add(PUMUF);
             entries.add(REMUF);
-            entries.add(WHITE);
+            entries.add(WMUF);
             entries.add(YMUF);
 
 
