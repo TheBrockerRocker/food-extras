@@ -103,6 +103,7 @@ public class ModItems {
             entries.add(REMUF);
             entries.add(WMUF);
             entries.add(YMUF);
+            entries.add(CYMUF);
 
 
         });
