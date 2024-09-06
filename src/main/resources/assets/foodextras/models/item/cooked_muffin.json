@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/generated",
     "textures": {
-      "layer0": "foodextras:item/cooked_muffin"
+      "layer0": "foodextras:item/cupcake/cooked_muffin"
     }
   }
