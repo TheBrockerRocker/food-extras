@@ -13,7 +13,7 @@ import  net.minecraft.registry.Registry;
 public class ModItems {
 
     public static final Item KNIFE = registerItem("knife", new Item(new Item.Settings().maxCount(1).maxDamage(128)));
-    public static final Item PIZZA = registerItem( "whole_pizza", new Item(new Item.Settings()));
+//    public static final Item PIZZA = registerItem( "whole_pizza", new Item(new Item.Settings()));
     public static final Item COCA = registerItem("cocoa_powder" , new Item(new Item.Settings()));
     public static final Item PURE = registerItem("pure_chocolate", new Item(new Item.Settings().food(ModFoodComponents.PURE).maxCount(16)));
     public static final Item MILK = registerItem("milk_chocolate", new MilkChocolatetItem(new Item.Settings().

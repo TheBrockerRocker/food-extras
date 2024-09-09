@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "foodextras:brown_cream"
+        },
+        {
+            "item": "foodextras:cooked_muffin"
+        }
+    ],
+    "result": {
+        "id": "foodextras:brown_muffin",
+        "count": 1
+    }
+}
