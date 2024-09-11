@@ -53,7 +53,9 @@ public class ModItems {
     public static final Item RECRM = registerItem("red_cream", new Item(new Item.Settings()));
     public static final Item WCRM = registerItem("white_cream", new Item(new Item.Settings()));
     public static final Item YCRM = registerItem("yellow_cream", new Item(new Item.Settings()));
+    public static final Item CHEESE = registerItem("cheese", new Item(new Item.Settings()));
 
+    
     private static Item registerItem(String name, Item item ) {
         return Registry.register(Registries.ITEM, new Identifier(FoodExtras.MOD_ID, name), item);
     }
