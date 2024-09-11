@@ -82,7 +82,7 @@ public class ModItems {
             entries.add(YCRM);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
-            entries.add(PIZZA);
+//            entries.add(PIZZA);
             entries.add(PURE);
             entries.add(MILK);
             entries.add(WHITE);
