@@ -26,5 +26,6 @@ public class ModFoodComponents {
     public  static final FoodComponent REMUF = new FoodComponent.Builder().nutrition(4).saturationModifier(3.0f).build();
     public  static final FoodComponent WMUF = new FoodComponent.Builder().nutrition(4).saturationModifier(2.0f).build();
     public  static final FoodComponent YMUF = new FoodComponent.Builder().nutrition(4).saturationModifier(3.0f).build();
+    public  static final FoodComponent CHEESE = new FoodComponent.Builder().nutrition(2).saturationModifier(1.0f).build();
 
 }
