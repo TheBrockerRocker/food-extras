@@ -85,6 +85,7 @@ public class ModItems {
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
 //            entries.add(PIZZA);
+            entries.add(CHEESE);
             entries.add(PURE);
             entries.add(MILK);
             entries.add(WHITE);
