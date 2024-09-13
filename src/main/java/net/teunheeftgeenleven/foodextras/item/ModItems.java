@@ -53,7 +53,7 @@ public class ModItems {
     public static final Item RECRM = registerItem("red_cream", new Item(new Item.Settings()));
     public static final Item WCRM = registerItem("white_cream", new Item(new Item.Settings()));
     public static final Item YCRM = registerItem("yellow_cream", new Item(new Item.Settings()));
-    public static final Item CHEESE = registerItem("cheese", new Item(new Item.Settings()));
+    public static final Item CHEESE = registerItem("cheese", new Item(new Item.Settings().food(ModFoodComponents.CHEESE)));
 
     
     private static Item registerItem(String name, Item item ) {
