@@ -54,6 +54,11 @@ public class ModItems {
     public static final Item WCRM = registerItem("white_cream", new Item(new Item.Settings()));
     public static final Item YCRM = registerItem("yellow_cream", new Item(new Item.Settings()));
     public static final Item CHEESE = registerItem("cheese", new Item(new Item.Settings().food(ModFoodComponents.CHEESE)));
+    public static final Item KETCHUP = registerItem("ketchup", new Item(new Item.Settings().food(ModFoodComponents.KETCHUP)));
+    public static final Item PEPERONI = registerItem("raw_peperoni", new Item(new Item.Settings().food(ModFoodComponents.PEPERONI)));
+    public static final Item PSLICE = registerItem("pizza_slice", new Item(new Item.Settings().food(ModFoodComponents.PSLICE)));
+    public static final Item RPIZ = registerItem("raw_pizza", new Item(new Item.Settings()));
+    public static final Item DOUGH = registerItem("dough", new Item(new Item.Settings()));
 
     
     private static Item registerItem(String name, Item item ) {
