@@ -4,6 +4,7 @@ package net.teunheeftgeenleven.foodextras.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.StewItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import net.teunheeftgeenleven.foodextras.FoodExtras;
@@ -13,7 +14,7 @@ import  net.minecraft.registry.Registry;
 public class ModItems {
 
     public static final Item KNIFE = registerItem("knife", new Item(new Item.Settings().maxCount(1).maxDamage(128)));
-//    public static final Item PIZZA = registerItem( "whole_pizza", new Item(new Item.Settings()));
+    public static final Item PIZZA = registerItem( "whole_pizza", new Item(new Item.Settings()));
     public static final Item COCA = registerItem("cocoa_powder" , new Item(new Item.Settings()));
     public static final Item PURE = registerItem("pure_chocolate", new Item(new Item.Settings().food(ModFoodComponents.PURE).maxCount(16)));
     public static final Item MILK = registerItem("milk_chocolate", new MilkChocolatetItem(new Item.Settings().
@@ -54,7 +55,7 @@ public class ModItems {
     public static final Item WCRM = registerItem("white_cream", new Item(new Item.Settings()));
     public static final Item YCRM = registerItem("yellow_cream", new Item(new Item.Settings()));
     public static final Item CHEESE = registerItem("cheese", new Item(new Item.Settings().food(ModFoodComponents.CHEESE)));
-    public static final Item KETCHUP = registerItem("ketchup", new Item(new Item.Settings().food(ModFoodComponents.KETCHUP)));
+    public static final Item KETCHUP = registerItem("ketchup", new StewItem(new Item.Settings().maxCount(1).food(ModFoodComponents.KETCHUP)));
     public static final Item PEPERONI = registerItem("raw_peperoni", new Item(new Item.Settings().food(ModFoodComponents.PEPERONI)));
     public static final Item PSLICE = registerItem("pizza_slice", new Item(new Item.Settings().food(ModFoodComponents.PSLICE)));
     public static final Item RPIZ = registerItem("raw_pizza", new Item(new Item.Settings()));
@@ -87,9 +88,14 @@ public class ModItems {
             entries.add(RECRM);
             entries.add(WCRM);
             entries.add(YCRM);
+            entries.add(KETCHUP);
+            entries.add(CHEESE);
+            entries.add(PEPERONI);
+            entries.add(RPIZ);
+            entries.add(DOUGH);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
-//            entries.add(PIZZA);
+            entries.add(PIZZA);
             entries.add(CHEESE);
             entries.add(PURE);
             entries.add(MILK);
@@ -113,6 +119,9 @@ public class ModItems {
             entries.add(WMUF);
             entries.add(YMUF);
             entries.add(CYMUF);
+            entries.add(KETCHUP);
+            entries.add(PEPERONI);
+            entries.add(PSLICE);
 
 
         });
