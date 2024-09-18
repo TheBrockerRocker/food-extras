@@ -82,7 +82,6 @@ public class ModItems {
             entries.add(RECRM);
             entries.add(WCRM);
             entries.add(YCRM);
-            entries.add(REMOVE_ME);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
 //            entries.add(PIZZA);
