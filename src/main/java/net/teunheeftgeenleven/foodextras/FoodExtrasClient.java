@@ -8,7 +8,6 @@ public class FoodExtrasClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
 
-        ModItems.registerModItems();
-        StirFry.registerModItems();
+
     }
 }
