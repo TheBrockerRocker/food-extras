@@ -70,5 +70,15 @@
   "item.foodextras.l_e_b_s": "Leek & Eggplant & Broccoli & Spinach Stir Fry",
   "item.foodextras.c_e_b_s": "Capsicum & Eggplant & Broccoli & Spinach Stir Fry",
   "item.foodextras.l_c_e_b_s": "Leek & Capsicum & Eggplant & Broccoli & Spinach Stir Fry",
-  "itemgroup.foodextras.stir_fry_items": "Stir Fry Items"
+  "itemgroup.foodextras.stir_fry_items": "Stir Fry Items",
+  "item.foodextras.raw_pizza": "Raw Pizza",
+  "item.foodextras.ketchup": "Ketchup",
+  "item.foodextras.raw_peperoni": "Pereroni",
+  "item.foodextras.pizza_slice": "Pizza Slice",
+  "item.foodextras.Dough": "Dough",
+  "item.foodextras.whole_pizza": "Cooked Pizza",
+  "itemgroup.foodextras.pizza_items": "Pizza Items",
+  "itemgroup.foodextras.chocolate_items": "Chocolate Items",
+  "itemgroup.foodextras.cupcake_items": "Cupcake Items",
+  "itemgroup.foodextras.rest": "Remaining Items"
 }

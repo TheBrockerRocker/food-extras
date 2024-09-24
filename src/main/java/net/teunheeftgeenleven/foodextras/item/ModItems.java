@@ -69,62 +69,7 @@ public class ModItems {
     public static void registerModItems() {
         FoodExtras.LOGGER.info("Registering mod items for " + FoodExtras.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(KNIFE);
-            entries.add(COCA);
-            entries.add(BCRM);
-            entries.add(BLCRM);
-            entries.add(BRCRM);
-            entries.add(CYCRM);
-            entries.add(GCRM);
-            entries.add(GRCRM);
-            entries.add(LBCRM);
-            entries.add(LGCRM);
-            entries.add(LCRM);
-            entries.add(MCRM);
-            entries.add(OCRM);
-            entries.add(PCRM);
-            entries.add(PUCRM);
-            entries.add(RECRM);
-            entries.add(WCRM);
-            entries.add(YCRM);
-            entries.add(KETCHUP);
-            entries.add(CHEESE);
-            entries.add(PEPERONI);
-            entries.add(RPIZ);
-            entries.add(DOUGH);
-        });
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
-            entries.add(PIZZA);
-            entries.add(CHEESE);
-            entries.add(PURE);
-            entries.add(MILK);
-            entries.add(WHITE);
-            entries.add(RMUF);
-            entries.add(CMUF);
-            entries.add(BMUF);
-            entries.add(BLMUF);
-            entries.add(BRMUF);
-            entries.add(CMUF);
-            entries.add(GMUF);
-            entries.add(GRMUF);
-            entries.add(LBMUF);
-            entries.add(LGMUF);
-            entries.add(LMUF);
-            entries.add(MMUF);
-            entries.add(OMUF);
-            entries.add(PMUF);
-            entries.add(PUMUF);
-            entries.add(REMUF);
-            entries.add(WMUF);
-            entries.add(YMUF);
-            entries.add(CYMUF);
-            entries.add(KETCHUP);
-            entries.add(PEPERONI);
-            entries.add(PSLICE);
 
-
-        });
 
     }
 }
