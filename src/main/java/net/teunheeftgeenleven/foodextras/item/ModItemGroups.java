@@ -10,45 +10,9 @@ import net.minecraft.util.Identifier;
 import net.teunheeftgeenleven.foodextras.FoodExtras;
 
 public class ModItemGroups {
-    public static final ItemGroup STIR_FRY_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(FoodExtras.MOD_ID, "stir_fry_items"),
-            FabricItemGroup.builder().icon(()-> new ItemStack(StirFry.L_C_E_B_S)).displayName(Text.translatable("itemgroup.foodextras.stir_fry_items")).
+    public static final ItemGroup FOOD_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(FoodExtras.MOD_ID, "food_items"),
+            FabricItemGroup.builder().icon(()-> new ItemStack(ModItems.PEACH)).displayName(Text.translatable("itemgroup.foodextras.food_items")).
                     entries((displayContext, entries) -> {
-        entries.add(StirFry.L);
-        entries.add(StirFry.C);
-        entries.add(StirFry.E);
-        entries.add(StirFry.B);
-        entries.add(StirFry.S);
-        entries.add(StirFry.L_C);
-        entries.add(StirFry.L_E);
-        entries.add(StirFry.L_B);
-        entries.add(StirFry.L_S);
-        entries.add(StirFry.C_E);
-        entries.add(StirFry.C_B);
-        entries.add(StirFry.C_S);
-        entries.add(StirFry.E_B);
-        entries.add(StirFry.E_S);
-        entries.add(StirFry.B_S);
-        entries.add(StirFry.L_C_E);
-        entries.add(StirFry.L_C_B);
-        entries.add(StirFry.L_C_S);
-        entries.add(StirFry.L_E_B);
-        entries.add(StirFry.L_E_S);
-        entries.add(StirFry.C_E_B);
-        entries.add(StirFry.C_E_S);
-        entries.add(StirFry.C_B_S);
-        entries.add(StirFry.E_B_S);
-        entries.add(StirFry.L_C_E_B);
-        entries.add(StirFry.L_C_E_S);
-        entries.add(StirFry.L_C_B_S);
-        entries.add(StirFry.L_E_B_S);
-        entries.add(StirFry.C_E_B_S);
-        entries.add(StirFry.L_C_E_B_S);
-        entries.add(StirFry.RICE_BOWL);
-    }) .build());
-    public static final ItemGroup CUPCAKE_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(FoodExtras.MOD_ID, "cupcake_items"),
-            FabricItemGroup.builder().icon(()-> new ItemStack(ModItems.CMUF)).displayName(Text.translatable("itemgroup.foodextras.cupcake_items")).
-                    entries((displayContext, entries) -> {
-                        entries.add(ModItems.RMUF);
                         entries.add(ModItems.CMUF);
                         entries.add(ModItems.BMUF);
                         entries.add(ModItems.BLMUF);
@@ -66,6 +30,112 @@ public class ModItemGroups {
                         entries.add(ModItems.WMUF);
                         entries.add(ModItems.YMUF);
                         entries.add(ModItems.CYMUF);
+                        entries.add(StirFry.L);
+                        entries.add(StirFry.C);
+                        entries.add(StirFry.E);
+                        entries.add(StirFry.B);
+                        entries.add(StirFry.S);
+                        entries.add(StirFry.L_C);
+                        entries.add(StirFry.L_E);
+                        entries.add(StirFry.L_B);
+                        entries.add(StirFry.L_S);
+                        entries.add(StirFry.C_E);
+                        entries.add(StirFry.C_B);
+                        entries.add(StirFry.C_S);
+                        entries.add(StirFry.E_B);
+                        entries.add(StirFry.E_S);
+                        entries.add(StirFry.B_S);
+                        entries.add(StirFry.L_C_E);
+                        entries.add(StirFry.L_C_B);
+                        entries.add(StirFry.L_C_S);
+                        entries.add(StirFry.L_E_B);
+                        entries.add(StirFry.L_E_S);
+                        entries.add(StirFry.C_E_B);
+                        entries.add(StirFry.C_E_S);
+                        entries.add(StirFry.C_B_S);
+                        entries.add(StirFry.E_B_S);
+                        entries.add(StirFry.L_C_E_B);
+                        entries.add(StirFry.L_C_E_S);
+                        entries.add(StirFry.L_C_B_S);
+                        entries.add(StirFry.L_E_B_S);
+                        entries.add(StirFry.C_E_B_S);
+                        entries.add(StirFry.L_C_E_B_S);
+                        entries.add(StirFry.RICE_BOWL);
+                        entries.add(ModItems.KETCHUP);
+                        entries.add(ModItems.CHEESE);
+                        entries.add(ModItems.PEPERONI);
+                        entries.add(ModItems.RPIZ);
+                        entries.add(ModItems.PURE);
+                        entries.add(ModItems.MILK);
+                        entries.add(ModItems.WHITE);
+                        entries.add(ModItems.PIZZA);
+                        entries.add(ModItems.PSLICE);
+                        entries.add(ModItems.TORT);
+                        entries.add(ModItems.MINCE);
+                        entries.add(ModItems.ONION);
+                        entries.add(ModItems.LEEK);
+                        entries.add(ModItems.CAPSICUM);
+                        entries.add(ModItems.ZUCCHINI);
+                        entries.add(ModItems.EGGPLANT);
+                        entries.add(ModItems.ASPARAGUS);
+                        entries.add(ModItems.CORN);
+                        entries.add(ModItems.BROCCOLI);
+                        entries.add(ModItems.CABBAGE);
+                        entries.add(ModItems.SPINACH);
+                        entries.add(ModItems.TOMATO);
+                        entries.add(ModItems.HOT_PEPPER);
+                        entries.add(ModItems.CAULIFLOWER);
+                        entries.add(ModItems.CELERY);
+                        entries.add(ModItems.MEPI);
+                        entries.add(ModItems.MUPI);
+                        entries.add(ModItems.TE);
+                        entries.add(ModItems.TC);
+                        entries.add(ModItems.TBE);
+                        entries.add(ModItems.TBC);
+                        entries.add(ModItems.TEC);
+                        entries.add(ModItems.TBEC);
+                        entries.add(ModItems.TB);
+                        entries.add(ModItems.TOAST);
+                        entries.add(ModItems.PDNUT);
+                        entries.add(ModItems.SDNUT);
+                        entries.add(ModItems.SUPI);
+                        entries.add(ModItems.TACO);
+                        entries.add(ModItems.PEACH);
+                        entries.add(ModItems.BACON_AND_EGGS);
+                        entries.add(ModItems.BANANA);
+                        entries.add(ModItems.BANANA_SMOOTIE);
+                        entries.add(ModItems.BURGER);
+                        entries.add(ModItems.CHERRY);
+                        entries.add(ModItems.CHOCOLATE_ICECREAM);
+                        entries.add(ModItems.COOKED_BURGER);
+                        entries.add(ModItems.COOKED_BACON);
+                        entries.add(ModItems.COOKED_EGG);
+                        entries.add(ModItems.COOKED_FRIES);
+                        entries.add(ModItems.COOKED_PANCAKE);
+                        entries.add(ModItems.COOKED_SAUSAGE);
+                        entries.add(ModItems.GOLD_KIWI);
+                        entries.add(ModItems.HOTDOG);
+                        entries.add(ModItems.ICECREAM_AND_SYRUP_CANCAKE);
+                        entries.add(ModItems.KETCHUP_HOTDOG);
+                        entries.add(ModItems.KIWI);
+                        entries.add(ModItems.MUSTARD_HOTDOG);
+                        entries.add(ModItems.KETCHUP_AND_MUSTARD_HOTDOG);
+                        entries.add(ModItems.ORANGE);
+                        entries.add(ModItems.ORANGE_JUICE);
+                        entries.add(ModItems.PEAR);
+                        entries.add(ModItems.PINEAPPLE);
+                        entries.add(ModItems.SPAGHETTI_BOLOGNESE);
+                        entries.add(ModItems.SPAGHETTI_BOLOGNESE_WITH_MEATBALLS);
+                        entries.add(ModItems.STRACCIATELLA_ICECREAM);
+                        entries.add(ModItems.STRAWBERRY_ICECREAM);
+                        entries.add(ModItems.STRAWBERRY);
+                        entries.add(ModItems.SYRUP_PANCAKE);
+                        entries.add(ModItems.VANILLA_ICECREAM);
+                        entries.add(ModItems.WAFFLE);
+                    }) .build());
+    public static final ItemGroup INGEREDENTS_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(FoodExtras.MOD_ID, "ingeredents_items"),
+            FabricItemGroup.builder().icon(()-> new ItemStack(ModItems.KNIFE)).displayName(Text.translatable("itemgroup.foodextras.ingeredents_items")).
+                    entries((displayContext, entries) -> {
                         entries.add(ModItems.BCRM);
                         entries.add(ModItems.BLCRM);
                         entries.add(ModItems.BRCRM);
@@ -82,32 +152,46 @@ public class ModItemGroups {
                         entries.add(ModItems.RECRM);
                         entries.add(ModItems.WCRM);
                         entries.add(ModItems.YCRM);
-                    }).build());
-    public static final ItemGroup PIZZA_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(FoodExtras.MOD_ID, "pizza_items"),
-            FabricItemGroup.builder().icon(()-> new ItemStack(ModItems.PSLICE)).displayName(Text.translatable("itemgroup.foodextras.pizza_items")).
-                    entries((displayContext, entries) -> {
+                        entries.add(ModItems.DOUGH);
                         entries.add(ModItems.KETCHUP);
                         entries.add(ModItems.CHEESE);
                         entries.add(ModItems.PEPERONI);
-                        entries.add(ModItems.RPIZ);
-                        entries.add(ModItems.DOUGH);
-                        entries.add(ModItems.PIZZA);
-                        entries.add(ModItems.PSLICE);
-                    }).build());
-    public static final ItemGroup CHOCOLATE_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(FoodExtras.MOD_ID, "chocolate_items"),
-            FabricItemGroup.builder().icon(()-> new ItemStack(ModItems.PURE)).displayName(Text.translatable("itemgroup.foodextras.chocolate_items")).
-                    entries((displayContext, entries) -> {
                         entries.add(ModItems.COCA);
-                        entries.add(ModItems.PURE);
-                        entries.add(ModItems.MILK);
-                        entries.add(ModItems.WHITE);
-                    }).build());
-    public static final ItemGroup REST = Registry.register(Registries.ITEM_GROUP, Identifier.of(FoodExtras.MOD_ID, "rest"),
-            FabricItemGroup.builder().icon(()-> new ItemStack(ModItems.KNIFE)).displayName(Text.translatable("itemgroup.foodextras.rest")).
-                    entries((displayContext, entries) -> {
                         entries.add(ModItems.KNIFE);
-                    }).build());
-
+                        entries.add(ModItems.RPIN);
+                        entries.add(ModItems.ONION);
+                        entries.add(ModItems.LEEK);
+                        entries.add(ModItems.CAPSICUM);
+                        entries.add(ModItems.ZUCCHINI);
+                        entries.add(ModItems.EGGPLANT);
+                        entries.add(ModItems.ASPARAGUS);
+                        entries.add(ModItems.CORN);
+                        entries.add(ModItems.BROCCOLI);
+                        entries.add(ModItems.CABBAGE);
+                        entries.add(ModItems.SPINACH);
+                        entries.add(ModItems.TOMATO);
+                        entries.add(ModItems.HOT_PEPPER);
+                        entries.add(ModItems.CAULIFLOWER);
+                        entries.add(ModItems.CELERY);
+                        entries.add(ModItems.BSLICE);
+                        entries.add(ModItems.RDNUT);
+                        entries.add(ModItems.SUROLL);
+                        entries.add(ModItems.SALSTICK);
+                        entries.add(ModItems.SEASHEETS);
+                        entries.add(ModItems.RMUF);
+                        entries.add(ModItems.BREAD_BUN);
+                        entries.add(ModItems.CRACKED_EGG);
+                        entries.add(ModItems.FLOUR);
+                        entries.add(ModItems.ICECREAM_CONE);
+                        entries.add(ModItems.RMEPI);
+                        entries.add(ModItems.RMUPI);
+                        entries.add(ModItems.MUSTARD);
+                        entries.add(ModItems.RAW_BURGER);
+                        entries.add(ModItems.RAW_BACON);
+                        entries.add(ModItems.RAW_FRIES);
+                        entries.add(ModItems.RAW_PANCAKE);
+                        entries.add(ModItems.RAW_SAUSAGE);
+                    }) .build());
 
     public static void registerItemGroups() {
         FoodExtras.LOGGER.info("Registering Item Groups For "+ FoodExtras.MOD_ID);
