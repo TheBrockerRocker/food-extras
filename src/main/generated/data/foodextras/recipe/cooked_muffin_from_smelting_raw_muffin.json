@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 400,
+  "experience": 0.2,
+  "group": "muffins",
+  "ingredient": {
+    "item": "foodextras:raw_muffin"
+  },
+  "result": {
+    "id": "foodextras:cooked_muffin"
+  }
+}

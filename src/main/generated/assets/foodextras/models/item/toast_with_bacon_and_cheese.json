@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "foodextras:item/toast_with_bacon_and_cheese"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "foodextras:black_cream"
+    },
+    {
+      "item": "foodextras:cooked_muffin"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "foodextras:black_muffin"
+  }
+}

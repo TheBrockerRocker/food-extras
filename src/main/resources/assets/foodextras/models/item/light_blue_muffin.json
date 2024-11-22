@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "foodextras:item/cupcake/light_blue_muffin"
+    }
+  }
