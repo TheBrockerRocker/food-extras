@@ -62,7 +62,8 @@ public class ModFoodComponents {
     public static final FoodComponent STRACCIATELLA = new FoodComponent.Builder().nutrition(3).saturationModifier(4.5f).build();
     public static final FoodComponent STRAWBERRY = new FoodComponent.Builder().nutrition(3).saturationModifier(4.5f).build();
     public static final FoodComponent SYRUP = new FoodComponent.Builder().nutrition(0).saturationModifier(6.5f).build();
-
+    public static final FoodComponent KETCHUP = createStew(2).build();
+    public static final FoodComponent MUSTARD = createStew(2).build();
 
 
 

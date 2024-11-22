@@ -36,7 +36,6 @@ public class MilkChocolatetItem extends Item {
         return stack.isEmpty() ? new ItemStack(Items.AIR) : stack;
     }
 
-    @Override
     public int getMaxUseTime(ItemStack stack) {
         return 32;
     }

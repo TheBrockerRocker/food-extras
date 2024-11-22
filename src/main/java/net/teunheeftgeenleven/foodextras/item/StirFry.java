@@ -52,9 +52,9 @@ public class StirFry{
 
 
     private static Item registerItem(String name, Item item ) {
-        return Registry.register(Registries.ITEM, new Identifier(FoodExtras.MOD_ID, name), item);
+        return Registry.register(Registries.ITEM, Identifier.of(FoodExtras.MOD_ID, name), item);
     }
     public static void registerModItems() {
-        FoodExtras.LOGGER.info("Registering mod items for " + FoodExtras.MOD_ID);
+        FoodExtras.LOGGER.info("Registering mod stirfry items for " + FoodExtras.MOD_ID);
     }
 }

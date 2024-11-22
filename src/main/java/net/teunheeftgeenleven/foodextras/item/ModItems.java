@@ -2,7 +2,6 @@ package net.teunheeftgeenleven.foodextras.item;
 
 
 import net.minecraft.item.Item;
-import net.minecraft.item.StewItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import net.teunheeftgeenleven.foodextras.FoodExtras;
@@ -50,10 +49,10 @@ public class ModItems {
     public static final Item PCRM = registerItem("pink_cream", new Item(new Item.Settings()));
     public static final Item PUCRM = registerItem("purple_cream", new Item(new Item.Settings()));
     public static final Item RECRM = registerItem("red_cream", new Item(new Item.Settings()));
-    public static final Item WCRM = registerItem("white_cream", new Item(new Item.Settings()));
+    public static final Item WCRM = registerItem("cream", new Item(new Item.Settings()));
     public static final Item YCRM = registerItem("yellow_cream", new Item(new Item.Settings()));
     public static final Item CHEESE = registerItem("cheese", new Item(new Item.Settings().food(ModFoodComponents.CHEESE)));
-    public static final Item KETCHUP = registerItem("ketchup", new StewItem(new Item.Settings().maxCount(1)));
+    public static final Item KETCHUP = registerItem("ketchup", new Item(new Item.Settings().maxCount(1).food(ModFoodComponents.KETCHUP)));
     public static final Item PEPERONI = registerItem("raw_peperoni", new Item(new Item.Settings().food(ModFoodComponents.PEPERONI)));
     public static final Item PSLICE = registerItem("pizza_slice", new Item(new Item.Settings().food(ModFoodComponents.PSLICE)));
     public static final Item RPIZ = registerItem("raw_pizza", new Item(new Item.Settings()));
@@ -118,7 +117,7 @@ public class ModItems {
     public static final Item ICECREAM_AND_SYRUP_CANCAKE = registerItem("icecream_and_syrup_pancake", new Item(new Item.Settings().food(ModFoodComponents.I_AND_S_CAKE)));
     public static final Item KETCHUP_HOTDOG = registerItem("ketchup_hotdog", new Item(new Item.Settings().food(ModFoodComponents.HOTDOG)));
     public static final Item KIWI = registerItem("kiwi", new Item(new Item.Settings().food(ModFoodComponents.FRUIT)));
-    public static final Item MUSTARD = registerItem("mustard", new Item(new Item.Settings()));
+    public static final Item MUSTARD = registerItem("mustard", new Item(new Item.Settings().food(ModFoodComponents.MUSTARD)));
     public static final Item MUSTARD_HOTDOG = registerItem("mustard_hotdog", new Item(new Item.Settings().food(ModFoodComponents.HOTDOG)));
     public static final Item KETCHUP_AND_MUSTARD_HOTDOG = registerItem("ketchup_and_mustrad_hotdog", new Item(new Item.Settings()));
     public static final Item ORANGE = registerItem("orange", new Item(new Item.Settings().food(ModFoodComponents.FRUIT)));
@@ -137,11 +136,24 @@ public class ModItems {
     public static final Item STRAWBERRY = registerItem("strawberry", new Item(new Item.Settings().food(ModFoodComponents.FRUIT)));
     public static final Item SYRUP_PANCAKE = registerItem("syrup_pacncake", new Item(new Item.Settings().food(ModFoodComponents.PANCAKE)));
     public static final Item VANILLA_ICECREAM = registerItem("vanilla_icecream", new Item(new Item.Settings().food(ModFoodComponents.STRAWBERRY)));
-    public static final Item WAFFLE = registerItem("waffel", new Item(new Item.Settings().food(ModFoodComponents.PANCAKE)));
+    public static final Item WAFFLE = registerItem("waffel", new Item(new Item.Settings().food(ModFoodComponents.SYRUP)));
+    public static final Item CAULIFLOUR_SEEDS = registerItem("cauliflour_seeds", new Item(new Item.Settings()));
+    public static final Item LEEK_SEEDS = registerItem("leek_seeds", new Item(new Item.Settings()));
+    public static final Item CAPSICUM_SEEDS = registerItem("capsicum_seeds", new Item(new Item.Settings()));
+    public static final Item ZUCCHINI_SEEDS = registerItem("zucchini_seeds", new Item(new Item.Settings()));
+    public static final Item EGGPLANT_SEEDS = registerItem("eggplant_seeds", new Item(new Item.Settings()));
+    public static final Item CORN_SEEDS = registerItem("corn_seeds", new Item(new Item.Settings()));
+    public static final Item BROCCOLIE_SEEDS = registerItem("broccolie_seeds", new Item(new Item.Settings()));
+    public static final Item CABBAGE_SEEDS = registerItem("cabbage_seeds", new Item(new Item.Settings()));
+    public static final Item SPINACH_SEEDS = registerItem("spinach_seeds", new Item(new Item.Settings()));
+    public static final Item TOMATO_SEEDS = registerItem("tomato_seeds", new Item(new Item.Settings()));
+    public static final Item HOT_PEPPER_SEEDS = registerItem("hot_pepper_seeds", new Item(new Item.Settings()));
+    public static final Item CELERY_SEEDS = registerItem("celery_seeds", new Item(new Item.Settings()));
+    public static final Item ASPARAGUS_SEEDS = registerItem("asparagus_seeds", new Item(new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item ) {
-        return Registry.register(Registries.ITEM, new Identifier(FoodExtras.MOD_ID, name), item);
+        return Registry.register(Registries.ITEM, Identifier.of(FoodExtras.MOD_ID, name), item);
     }
 
     public static void registerModItems() {
