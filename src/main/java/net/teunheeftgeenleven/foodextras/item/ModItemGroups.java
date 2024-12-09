@@ -191,6 +191,19 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_FRIES);
                         entries.add(ModItems.RAW_PANCAKE);
                         entries.add(ModItems.RAW_SAUSAGE);
+                        entries.add(ModItems.CAPSICUM_SEEDS);
+                        entries.add(ModItems.ASPARAGUS_SEEDS);
+                        entries.add(ModItems.BROCCOLIE_SEEDS);
+                        entries.add(ModItems.CABBAGE_SEEDS);
+                        entries.add(ModItems.CAPSICUM_SEEDS);
+                        entries.add(ModItems.CELERY_SEEDS);
+                        entries.add(ModItems.CORN_SEEDS);
+                        entries.add(ModItems.EGGPLANT_SEEDS);
+                        entries.add(ModItems.HOT_PEPPER_SEEDS);
+                        entries.add(ModItems.LEEK_SEEDS);
+                        entries.add(ModItems.SPINACH_SEEDS);
+                        entries.add(ModItems.TOMATO_SEEDS);
+                        entries.add(ModItems.ZUCCHINI_SEEDS);
                     }) .build());
 
     public static void registerItemGroups() {

@@ -5,6 +5,8 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.teunheeftgeenleven.foodextras.block.ModBlocks;
+import net.teunheeftgeenleven.foodextras.block.custom.CauliflowerCropBlock;
 import net.teunheeftgeenleven.foodextras.item.ModItems;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -14,7 +16,22 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-// hi
+        blockStateModelGenerator.registerCrop(ModBlocks.CAULIFLOWER_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        blockStateModelGenerator.registerCrop(ModBlocks.ASPARAGUS_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        blockStateModelGenerator.registerCrop(ModBlocks.BROCCOLIE_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        blockStateModelGenerator.registerCrop(ModBlocks.CABBAGE_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        blockStateModelGenerator.registerCrop(ModBlocks.CAPSICUM_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        blockStateModelGenerator.registerCrop(ModBlocks.CELERY_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        blockStateModelGenerator.registerCrop(ModBlocks.CORN_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        blockStateModelGenerator.registerCrop(ModBlocks.EGGPLANT_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        blockStateModelGenerator.registerCrop(ModBlocks.HOT_PEPPER_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        blockStateModelGenerator.registerCrop(ModBlocks.LEEK_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        blockStateModelGenerator.registerCrop(ModBlocks.ONION_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        blockStateModelGenerator.registerCrop(ModBlocks.SPINACH_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        blockStateModelGenerator.registerCrop(ModBlocks.ZUCCHINI_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+
+
     }
 
     @Override
@@ -144,5 +161,17 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SYRUP_PANCAKE, Models.GENERATED);
         itemModelGenerator.register(ModItems.VANILLA_ICECREAM, Models.GENERATED);
         itemModelGenerator.register(ModItems.WAFFLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ASPARAGUS_SEEDS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BROCCOLIE_SEEDS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CABBAGE_SEEDS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CAPSICUM_SEEDS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CELERY_SEEDS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CORN_SEEDS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.EGGPLANT_SEEDS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HOT_PEPPER_SEEDS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LEEK_SEEDS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPINACH_SEEDS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TOMATO_SEEDS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ZUCCHINI_SEEDS, Models.GENERATED);
     }
 }
