@@ -6,7 +6,6 @@ import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.teunheeftgeenleven.foodextras.block.ModBlocks;
 import net.teunheeftgeenleven.foodextras.item.ModItemGroups;
 import net.teunheeftgeenleven.foodextras.item.ModItems;
-import net.teunheeftgeenleven.foodextras.item.StirFry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,12 +17,9 @@ public class FoodExtras implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
-		StirFry.registerModItems();
 		ModBlocks.registerModBlocks();
 		LOGGER.info("Done with registering");
 
-		CompostingChanceRegistry.INSTANCE.add(ModItems.ASPARAGUS,0.2f);
-		CompostingChanceRegistry.INSTANCE.add(ModItems.ASPARAGUS_SEEDS, 0.1f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.BROCCOLI,0.2f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.BROCCOLIE_SEEDS, 0.1f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.CABBAGE,0.2f);
@@ -32,8 +28,6 @@ public class FoodExtras implements ModInitializer {
 		CompostingChanceRegistry.INSTANCE.add(ModItems.CAPSICUM_SEEDS, 0.1f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.CAULIFLOWER,0.2f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.CAULIFLOUR_SEEDS, 0.1f);
-		CompostingChanceRegistry.INSTANCE.add(ModItems.CELERY,0.2f);
-		CompostingChanceRegistry.INSTANCE.add(ModItems.CELERY_SEEDS, 0.1f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.CORN,0.2f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.CORN_SEEDS, 0.1f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.EGGPLANT,0.2f);

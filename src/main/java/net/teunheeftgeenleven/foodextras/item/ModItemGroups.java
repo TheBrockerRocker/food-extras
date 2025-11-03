@@ -14,53 +14,13 @@ public class ModItemGroups {
             FabricItemGroup.builder().icon(()-> new ItemStack(ModItems.PEACH)).displayName(Text.translatable("itemgroup.foodextras.food_items")).
                     entries((displayContext, entries) -> {
                         entries.add(ModItems.CMUF);
-                        entries.add(ModItems.BMUF);
-                        entries.add(ModItems.BLMUF);
-                        entries.add(ModItems.BRMUF);
-                        entries.add(ModItems.GMUF);
-                        entries.add(ModItems.GRMUF);
-                        entries.add(ModItems.LBMUF);
-                        entries.add(ModItems.LGMUF);
-                        entries.add(ModItems.LMUF);
-                        entries.add(ModItems.MMUF);
-                        entries.add(ModItems.OMUF);
-                        entries.add(ModItems.PMUF);
-                        entries.add(ModItems.PUMUF);
-                        entries.add(ModItems.REMUF);
-                        entries.add(ModItems.WMUF);
-                        entries.add(ModItems.YMUF);
-                        entries.add(ModItems.CYMUF);
-                        entries.add(StirFry.L);
-                        entries.add(StirFry.C);
-                        entries.add(StirFry.E);
-                        entries.add(StirFry.B);
-                        entries.add(StirFry.S);
-                        entries.add(StirFry.L_C);
-                        entries.add(StirFry.L_E);
-                        entries.add(StirFry.L_B);
-                        entries.add(StirFry.L_S);
-                        entries.add(StirFry.C_E);
-                        entries.add(StirFry.C_B);
-                        entries.add(StirFry.C_S);
-                        entries.add(StirFry.E_B);
-                        entries.add(StirFry.E_S);
-                        entries.add(StirFry.B_S);
-                        entries.add(StirFry.L_C_E);
-                        entries.add(StirFry.L_C_B);
-                        entries.add(StirFry.L_C_S);
-                        entries.add(StirFry.L_E_B);
-                        entries.add(StirFry.L_E_S);
-                        entries.add(StirFry.C_E_B);
-                        entries.add(StirFry.C_E_S);
-                        entries.add(StirFry.C_B_S);
-                        entries.add(StirFry.E_B_S);
-                        entries.add(StirFry.L_C_E_B);
-                        entries.add(StirFry.L_C_E_S);
-                        entries.add(StirFry.L_C_B_S);
-                        entries.add(StirFry.L_E_B_S);
-                        entries.add(StirFry.C_E_B_S);
-                        entries.add(StirFry.L_C_E_B_S);
-                        entries.add(StirFry.RICE_BOWL);
+                        entries.add(ModItems.MUFFIN);
+                        entries.add(ModItems.RICE_BOWL);
+                        entries.add(ModItems.STIR_FRY_T1);
+                        entries.add(ModItems.STIR_FRY_T2);
+                        entries.add(ModItems.STIR_FRY_T3);
+                        entries.add(ModItems.STIR_FRY_T4);
+                        entries.add(ModItems.STIR_FRY_T5);
                         entries.add(ModItems.KETCHUP);
                         entries.add(ModItems.CHEESE);
                         entries.add(ModItems.PEPERONI);
@@ -77,7 +37,6 @@ public class ModItemGroups {
                         entries.add(ModItems.CAPSICUM);
                         entries.add(ModItems.ZUCCHINI);
                         entries.add(ModItems.EGGPLANT);
-                        entries.add(ModItems.ASPARAGUS);
                         entries.add(ModItems.CORN);
                         entries.add(ModItems.BROCCOLI);
                         entries.add(ModItems.CABBAGE);
@@ -85,7 +44,6 @@ public class ModItemGroups {
                         entries.add(ModItems.TOMATO);
                         entries.add(ModItems.HOT_PEPPER);
                         entries.add(ModItems.CAULIFLOWER);
-                        entries.add(ModItems.CELERY);
                         entries.add(ModItems.MEPI);
                         entries.add(ModItems.MUPI);
                         entries.add(ModItems.TE);
@@ -115,7 +73,7 @@ public class ModItemGroups {
                         entries.add(ModItems.COOKED_SAUSAGE);
                         entries.add(ModItems.GOLD_KIWI);
                         entries.add(ModItems.HOTDOG);
-                        entries.add(ModItems.ICECREAM_AND_SYRUP_CANCAKE);
+                        entries.add(ModItems.ICECREAM_AND_SYRUP_PANCAKE);
                         entries.add(ModItems.KETCHUP_HOTDOG);
                         entries.add(ModItems.KIWI);
                         entries.add(ModItems.MUSTARD_HOTDOG);
@@ -136,22 +94,8 @@ public class ModItemGroups {
     public static final ItemGroup INGEREDENTS_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(FoodExtras.MOD_ID, "ingeredents_items"),
             FabricItemGroup.builder().icon(()-> new ItemStack(ModItems.KNIFE)).displayName(Text.translatable("itemgroup.foodextras.ingeredents_items")).
                     entries((displayContext, entries) -> {
-                        entries.add(ModItems.BCRM);
-                        entries.add(ModItems.BLCRM);
-                        entries.add(ModItems.BRCRM);
-                        entries.add(ModItems.CYCRM);
-                        entries.add(ModItems.GCRM);
-                        entries.add(ModItems.GRCRM);
-                        entries.add(ModItems.LBCRM);
-                        entries.add(ModItems.LGCRM);
-                        entries.add(ModItems.LCRM);
-                        entries.add(ModItems.MCRM);
-                        entries.add(ModItems.OCRM);
-                        entries.add(ModItems.PCRM);
-                        entries.add(ModItems.PUCRM);
-                        entries.add(ModItems.RECRM);
+
                         entries.add(ModItems.WCRM);
-                        entries.add(ModItems.YCRM);
                         entries.add(ModItems.DOUGH);
                         entries.add(ModItems.KETCHUP);
                         entries.add(ModItems.CHEESE);
@@ -164,7 +108,6 @@ public class ModItemGroups {
                         entries.add(ModItems.CAPSICUM);
                         entries.add(ModItems.ZUCCHINI);
                         entries.add(ModItems.EGGPLANT);
-                        entries.add(ModItems.ASPARAGUS);
                         entries.add(ModItems.CORN);
                         entries.add(ModItems.BROCCOLI);
                         entries.add(ModItems.CABBAGE);
@@ -172,7 +115,6 @@ public class ModItemGroups {
                         entries.add(ModItems.TOMATO);
                         entries.add(ModItems.HOT_PEPPER);
                         entries.add(ModItems.CAULIFLOWER);
-                        entries.add(ModItems.CELERY);
                         entries.add(ModItems.BSLICE);
                         entries.add(ModItems.RDNUT);
                         entries.add(ModItems.SUROLL);
@@ -192,11 +134,9 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_PANCAKE);
                         entries.add(ModItems.RAW_SAUSAGE);
                         entries.add(ModItems.CAPSICUM_SEEDS);
-                        entries.add(ModItems.ASPARAGUS_SEEDS);
                         entries.add(ModItems.BROCCOLIE_SEEDS);
                         entries.add(ModItems.CABBAGE_SEEDS);
                         entries.add(ModItems.CAPSICUM_SEEDS);
-                        entries.add(ModItems.CELERY_SEEDS);
                         entries.add(ModItems.CORN_SEEDS);
                         entries.add(ModItems.EGGPLANT_SEEDS);
                         entries.add(ModItems.HOT_PEPPER_SEEDS);
